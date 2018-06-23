@@ -132,6 +132,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
 /*网站风格定义*/
 
 .green {
@@ -156,7 +168,7 @@ a:hover {
 
 /* Clearfix,避免因子元素浮动而导致的父元素高度缺失能问题 */
 
-.clearfix:after {
+/* .clearfix:after {
     clear: both;
     content: ".";
     display: block;
@@ -179,7 +191,7 @@ html[xmlns] .clearfix {
 
 *+html .clearfix {
     height: 1%;
-}
+} */
 
 time {
     color: #777;
