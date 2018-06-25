@@ -103,7 +103,7 @@ a:hover {
 i,
 cite,
 em {
-    font-style: normal;
+    font-style: normal; 
 }
 
 /* ==========================
@@ -256,6 +256,7 @@ menu {
 }
 
 .zc-main {
+    padding-bottom: 70px;
     color: #333;
     font-family: tahoma,arial,Microsoft YaHei,Hiragino Sans GB,sans-serif;
 }
@@ -395,6 +396,7 @@ menu {
     height: 20px;
     border: 2px solid #9f9f9f;
     border-radius: 50%;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -413,8 +415,6 @@ menu {
 .zc-rank-sub li:nth-child(3) strong {
    border-color: #48d932;
 }
-
-
 
 .zc-rank-sub i {
     display: inline-block;
@@ -535,6 +535,7 @@ menu {
 
 .zc-container {
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .zc-title {
@@ -775,11 +776,12 @@ menu {
     bottom: 0;
     width: 261px;
     height: 32px;
-    padding-left: 15px;
+    padding: 0 15px;
     line-height: 32px;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .success-detail li {
@@ -950,19 +952,74 @@ menu {
     color: #888;
 }
 
-
-
-
-
-div.bodyer {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.news-wrap {
+    margin-left: -20px;
 }
 
-div.bodyer img {
-    margin: 0 auto;
+.news-sort {
+    float: left;
+    width: 374px;
+    padding: 0 19px;
+    border-left: 1px dashed #ddd;
+    font-size: 14px;
+}
+
+.news-wrap .news-sort:last-child {
+    padding-right: 0;
+}
+
+.news-title {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-title h1 {
+    float: left;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.news-title a {
+    float: right;
+    margin-right: 15px;
+    color: #999;
+}
+
+.news-title a:hover {
+    text-decoration: none;
+}
+
+.news-detail li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+.news-detail a {
+    position: relative;
+    width: 250px;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.news-detail a:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.news-detail span {
+    float: right;
+    margin-right: 15px;
 }
