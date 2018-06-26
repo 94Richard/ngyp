@@ -183,6 +183,7 @@
     height: 65px;
     float: left;
     margin: 15px 30px auto 0;
+    font-size: 0;
 }
 
 .public-head-layout .site-logo img {

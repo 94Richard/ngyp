@@ -1,0 +1,71 @@
+.ms-container {
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.ms-nav-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.aside-nav {
+    float: left;
+    width: 212px;
+    height: 420px;
+    padding-top: 16px;
+    background: #4d4d4d;
+}
+
+.aside-nav>li {
+    height: 70px;
+}
+
+.aside-nav h1 {
+    float: left;
+    font-size: 14px;
+}
+
+.aside-nav i {
+    float: right;
+    width: 12px;
+    height: 20px;
+    margin-right: 10px;
+    background: url(../images/nlms/right-arrow.png) no-repeat;
+}
+
+.ms-icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 10px;
+    background: url(../images/nlms/ms-icon-bg.png) no-repeat;
+}
+
+.visit .ms-icon {
+    background-position: -20px 0;
+}
+
+.country .ms-icon {
+    background-position: -40px 0;
+}
+
+.town .ms-icon {
+    background-position: 0 -20px;
+}
+
+.ecology .ms-icon {
+    background-position: -20px  -20px;
+}
+
+.culture .ms-icon {
+    background-position: -40px -20px;
+}
+.aside-nav a {
+    color: #fff;
+}
+
+.aside-nav p {
+    margin-left: 35px;
+    margin-top: 15px;
+}
