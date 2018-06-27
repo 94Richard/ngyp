@@ -194,57 +194,57 @@ function takeCount() {
     });
 }
 
-function DOTCHANGE() {
-    var changenow = $(this).index();
-    $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
-    $('#fullScreenSlides li').eq(changenow).css({
-        'z-index': '800'
-    }).show();
-    pagination.eq(changenow).addClass('current').siblings('li').removeClass('current');
-    $('#fullScreenSlides li').eq(nownow).fadeOut(400,
-        function () {
-            $('#fullScreenSlides li').eq(changenow).fadeIn(500);
-        });
-    nownow = changenow;
-}
+// function DOTCHANGE() {
+//     var changenow = $(this).index();
+//     $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
+//     $('#fullScreenSlides li').eq(changenow).css({
+//         'z-index': '800'
+//     }).show();
+//     pagination.eq(changenow).addClass('current').siblings('li').removeClass('current');
+//     $('#fullScreenSlides li').eq(nownow).fadeOut(400,
+//         function () {
+//             $('#fullScreenSlides li').eq(changenow).fadeIn(500);
+//         });
+//     nownow = changenow;
+// }
 
-function ADDLI() {
-    for (var i = 0; i <= numpic; i++) {
-        ulcontent += '<li>' + '<a href="#">' + (i + 1) + '</a>' + '</li>';
-    }
-    $('#fullScreenSlides').after(ulstart + ulcontent + ulend);
-}
+// function ADDLI() {
+//     for (var i = 0; i <= numpic; i++) {
+//         ulcontent += '<li>' + '<a href="#">' + (i + 1) + '</a>' + '</li>';
+//     }
+//     $('#fullScreenSlides').after(ulstart + ulcontent + ulend);
+// }
 
-function GOGO() {
-    var NN = nownow + 1;
-    if (inout == 1) {} else {
-        if (nownow < numpic) {
-            $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
-            $('#fullScreenSlides li').eq(NN).css({
-                'z-index': '800'
-            }).show();
-            pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
-            $('#fullScreenSlides li').eq(nownow).fadeOut(400,
-                function () {
-                    $('#fullScreenSlides li').eq(NN).fadeIn(500);
-                });
-            nownow += 1;
-        } else {
-            NN = 0;
-            $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
-            $('#fullScreenSlides li').eq(NN).stop(true, true).css({
-                'z-index': '800'
-            }).show();
-            $('#fullScreenSlides li').eq(nownow).fadeOut(400,
-                function () {
-                    $('#fullScreenSlides li').eq(0).fadeIn(500);
-                });
-            pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
-            nownow = 0;
-        }
-    }
-    TT = setTimeout(GOGO, SPEED);
-}
+// function GOGO() {
+//     var NN = nownow + 1;
+//     if (inout == 1) {} else {
+//         if (nownow < numpic) {
+//             $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
+//             $('#fullScreenSlides li').eq(NN).css({
+//                 'z-index': '800'
+//             }).show();
+//             pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
+//             $('#fullScreenSlides li').eq(nownow).fadeOut(400,
+//                 function () {
+//                     $('#fullScreenSlides li').eq(NN).fadeIn(500);
+//                 });
+//             nownow += 1;
+//         } else {
+//             NN = 0;
+//             $('#fullScreenSlides li').eq(nownow).css('z-index', '900');
+//             $('#fullScreenSlides li').eq(NN).stop(true, true).css({
+//                 'z-index': '800'
+//             }).show();
+//             $('#fullScreenSlides li').eq(nownow).fadeOut(400,
+//                 function () {
+//                     $('#fullScreenSlides li').eq(0).fadeIn(500);
+//                 });
+//             pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
+//             nownow = 0;
+//         }
+//     }
+//     TT = setTimeout(GOGO, SPEED);
+// }
 
 
 //首页焦点区满屏背景广告切换
@@ -460,30 +460,7 @@ $(function () {
 })
 //电梯.end
 
-//hotConAd.begin
 
-$(document).ready(function () {
-    var speed = 30;
-    var $tab = $("#hotConAd");
-    var $tab1 = $("#conlist");
-    var $tab2 = $("#conscroll");
-    $tab2.html($tab1.html());
-
-    function Marquee() {
-        if ($tab2[0].offsetWidth - $tab[0].scrollLeft <= 0)
-            $tab[0].scrollLeft -= $tab1[0].offsetWidth;
-        else {
-            $tab[0].scrollLeft++;
-        }
-    }
-    var MyMar = setInterval(Marquee, speed);
-    $tab.hover(function () {
-        clearInterval(MyMar);
-    }, function () {
-        MyMar = setInterval(Marquee, speed)
-    })
-})
-//hotConAd.end
 
 //首页下拉广告.begin
 

@@ -1,6 +1,7 @@
 .ms-container {
     width: 100%;
     background: #f6f6f6;
+    font-family: tahoma,arial,Microsoft YaHei,Hiragino Sans GB,sans-serif;
 }
 
 .ms-nav-wrap {
@@ -68,4 +69,405 @@
 .aside-nav p {
     margin-left: 35px;
     margin-top: 15px;
+}
+
+.ms-banner-layout {
+    float: right;
+    width: 988px;
+    height: 436px;
+}
+
+.ms-focus-layout {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.full-screen-slides {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.full-screen-slides li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.full-screen-slides li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 2;
+}
+
+.full-screen-slides-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    height: 32px;
+    margin-left: -1px;
+    font-size: 0;
+    *word-spacing: -1px/*IE6、7*/;
+    text-align: center;
+}
+
+.full-screen-slides-pagination li {
+    box-sizing: border-box;
+    display: inline-block;
+    *display: inline/*IE6、7*/
+    ;
+    width: 20%;
+    height: 32px;
+    border-left: 1px solid #9efff9;
+    overflow: hidden;
+    line-height: 32px;
+    cursor: pointer;
+    *zoom: 1;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+    opacity: .9;
+}
+
+.full-screen-slides-pagination a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.full-screen-slides-pagination .current,
+.full-screen-slides-pagination li:hover {
+    background: #144339;
+    opacity: 1;
+}
+
+.full-screen-slides-pagination .current a,
+.full-screen-slides-pagination a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ms-banner-bottom {
+    font-size: 0;
+}
+
+.recommend {
+    width: 1200px;
+    margin: 10px auto 0;
+}
+
+.recommend-title {
+    position: relative;
+    height: 32px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    line-height: 32px;
+}
+
+.recommend-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ddd;
+}
+.recommend i {
+    display: inline-block;
+    width: 35px;
+    height: 27px;
+    margin-right: 32px;
+    vertical-align: middle;
+    background: url(../images/nlms/ms-icon-01.png) no-repeat;
+}
+
+.recommend h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #51b402;
+}
+
+.recommend img {
+    width: 100%;
+    height: 100%;
+}
+
+.ms-tabs-header {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.ms-tabs-nav li {
+    float: left;
+    margin-right: 20px;
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.ms-tabs-nav li.cur,
+.ms-tabs-nav li:hover {
+    border-radius:5px;
+    color: #fff;
+    background: #52b301;
+    cursor: pointer;
+}
+
+.ms-left-ads {
+    width: 218px;
+    height: 438px;
+    margin-right: 2px;
+    overflow: hidden;
+}
+
+.ms-recom-goods {
+    float: left;
+    width: 980px;
+    height: 438px;
+    overflow: hidden;
+}
+
+.ms-recom-goods li {
+    float: left;
+    width: 224px;
+    height: 210px;
+    margin-left: 21px;
+    margin-bottom: 18px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+.recom-img-wrap {
+    width: 224px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.recom-goods-title {
+    height: 44px;
+    padding: 5px 8px 0;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.recom-goods-price {
+    padding-left: 8px;
+    color: #fe6127;
+}
+
+.recom-goods-price span {
+    font-size: 20px;
+}
+
+.part-nlms {
+    width: 1200px;
+    margin: 30px auto 0;
+    padding-bottom: 18px;
+}
+
+.part-nlms img {
+    width: 100%;
+    height: 100%;
+}
+
+.part-nlms-left {
+    float: left;
+    width: 220px;
+}
+
+.part-nlms-title {
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 2px solid #f80;
+}
+
+.part-nlms-title i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url(../images/nlms/ms-icon-02.png) no-repeat;
+    vertical-align: middle;
+}
+
+.part-nlms-title h1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f80;
+    font-size: 22px;
+}
+
+.part-nlms-recom {
+    height: 200px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.recom-items {
+    height: 24px;
+    overflow: hidden;
+}
+
+.part-nlms-recom li:first-child .recom-items {
+    height: auto;
+    max-height: 48px;
+    overflow: hidden;
+}
+
+.part-nlms-recom h2 {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+
+.recom-items li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 22px;
+    font-size: 14px;
+}
+
+.recom-items li a {
+    color: #999;
+}
+
+.part-nlms-banner {
+    width: 220px;
+    height: 215px;
+}
+
+.part-nlms-right {
+    width: 980px;
+}
+
+.part-nlms-nav {
+    height: 44px;
+    border-bottom: 2px solid#f80;
+}
+
+.part-nlms-nav a {
+    margin-top: 16px;
+    color: #888;
+    font-size: 14px;
+}
+
+.part-nlms-nav a:hover {
+    color: #f80;
+}
+
+.nlms-nav-tab {
+    float: left;
+    height: 32px;
+    margin-top: 12px;
+    line-height: 32px;
+}
+
+.nlms-nav-tab li {
+    position: relative;
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nlms-nav-tab li.cur,
+.nlms-nav-tab li:hover {
+    color: #f80;
+    cursor: pointer;
+}
+
+.nlms-nav-tab li.cur::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6px;
+    border: 6px solid;
+    border-color: transparent transparent #f80 transparent;
+
+}
+
+.nlms-nav-item {
+    height: 416px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.nlms-nav-item li {
+    float: left;
+    width: 180px;
+    height: 200px;
+    margin-left: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 14px;
+}
+
+.nlms-goods-wrap {
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.ms-goods-title {
+    height: 40px;
+    margin: 8px 8px 0;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.ms-goods-price {
+    height: 32px;
+    line-height: 28px;
+}
+
+.ms-goods-price h3 {
+    float: left;
+    margin-left: 8px;
+    font-size: 12px;
+    color: #999;
+}
+
+.ms-goods-price h3 em {
+    font-size: 20px;
+    color: #fe3501;
+}
+
+.ms-goods-price span {
+    float: right;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    margin-top: 6px;
+    padding: 0 5px;
+    font-size: 12px;
+    background: #01c94d;
+    color: #fff;
+}
+
+.ms-part-4 {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+    overflow: hidden;
 }
